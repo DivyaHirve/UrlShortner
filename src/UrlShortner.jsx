@@ -12,7 +12,7 @@ function UrlShortener() {
         setShortUrl(''); // Clear previous short URL
         try {
             // Send a POST request to your backend API
-            const response = await axios.post('https://54.236.205.144/api/shorten', originalUrl, {
+            const response = await axios.post('https://54.236.205.144:8443/api/shorten', originalUrl, {
             // const response = await axios.post('http://localhost:8080/api/shorten', originalUrl, {
                 headers: {
                     'Content-Type': 'text/plain'
